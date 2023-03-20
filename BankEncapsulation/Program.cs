@@ -22,24 +22,7 @@ namespace BankEncapsulation
             account.Deposit(depositAmount);
 
             Console.WriteLine($"Thank you for your deposit of {depositAmount}. \n" +
-                $"Would you like to see your balance?");
-
-            //For the life of me I can't remember how to use ToLower, will look it up later.s
-
-            var userInput = Console.ReadLine();
-
-            if (userInput == "Yes")
-            {
-                Console.WriteLine($"Your balance is currently {account.GetBalance()}.");
-            }
-            else if (userInput == "yes")
-            {
-                Console.WriteLine($"Your balance is currently {account.GetBalance()}.");
-            }
-            else
-            {
-                Console.WriteLine("Have a great day!");
-            }
+                $"Your balance is now {account.GetBalance()}.");
 
 
         }

@@ -16,9 +16,9 @@ namespace BankEncapsulation
 			balance = amount;
 		}
 
-		public double GetBalance()
+		public string GetBalance()
 		{
-			return balance;
+			return $"${balance}";
 		}
 
 	}
